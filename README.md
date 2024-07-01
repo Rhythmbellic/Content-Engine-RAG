@@ -8,20 +8,7 @@ This project is a Content Engine that analyzes and compares multiple PDF documen
 Directory Structure
 
 
-/content-engine
-    /data
-        - alphabet_10k.pdf
-        - tesla_10k.pdf
-        - uber_10k.pdf
-    - document_processing.py
-    - embedding_model.py
-    - vector_store.py
-    - query_engine.py
-    - interface.py
-    - main.py
-    - requirements.txt
-    - README.md
-
+![Screenshot 2024-07-01 204822](https://github.com/Rhythmbellic/Content-Engine-RAG/assets/92723976/e7a1d4ad-a084-47d7-970d-7e22f8181e79)
 
     
 Files Overview
@@ -94,6 +81,11 @@ Libraries: streamlit.
 
 Details: A Streamlit-based interface is created to facilitate user interaction. Users can input queries, which are processed by the backend to return insights from the PDF documents.
 
+
+![Screenshot 2024-07-01 203700](https://github.com/Rhythmbellic/Content-Engine-RAG/assets/92723976/20628707-d54c-4b1b-b3ac-d846200e0e93)
+
+
+
 Setup and Usage
 
 
@@ -112,3 +104,13 @@ python main.py
 Access the application:
 
 Open your web browser and go to http://localhost:8501.
+
+
+Examples-
+
+![Screenshot 2024-07-01 203653](https://github.com/Rhythmbellic/Content-Engine-RAG/assets/92723976/242a9eaa-9c6b-496f-aebd-6b7371d8a0c6)
+
+![Screenshot 2024-07-01 203214](https://github.com/Rhythmbellic/Content-Engine-RAG/assets/92723976/d1980bd0-3015-42c1-82f0-e72107494423)
+
+
+
