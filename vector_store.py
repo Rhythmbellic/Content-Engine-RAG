@@ -1,17 +1,22 @@
+#importing Libraries
 from langchain.vectorstores.chroma import Chroma
 from document_processing import load_documents, split_documents
 
-CHROMA_PATH = r"C:\Users\rhyth\content-engine\chroma"
+#path of chroma vector storage
+CHROMA_PATH = "chroma"
 
+#function to make a chroma store
 def initialize_vector_store(embedding_function):
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
     return db
 
+#function to store vectors in store
 def add_documents_to_store(db, chunks):
     chunks_with_ids = calculate_chunk_ids(chunks)
     db.add_documents(chunks_with_ids)
     db.persist()
 
+#function to calculate chunks
 def calculate_chunk_ids(chunks):
     last_page_id = None
     current_chunk_index = 0
