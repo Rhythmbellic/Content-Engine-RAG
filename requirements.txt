@@ -1,0 +1,7 @@
+streamlit
+langchain
+pandas
+PyPDF2
+numpy
+ollama
+chromadb
